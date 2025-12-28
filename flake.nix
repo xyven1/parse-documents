@@ -43,7 +43,7 @@
 
       devShells.default = pkgs.mkShell {
         inputsFrom = [self.packages.${system}.default];
-        buildInputs = [
+        packages = [
           pkgs.ruff
           pkgs.basedpyright
         ];
